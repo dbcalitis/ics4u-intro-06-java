@@ -21,7 +21,7 @@ jobs:
         uses: Mr-Coxall/prettier_action@main
         with:
           # run Prettier and change code that needs fixing, before next section
-          prettier_options: --write **/*.{html,css,js,ts,jsx,tsx,json,java}
+          prettier_options: --write **/*.{html,css,js,ts,jsx,tsx,json}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run GitHub Super Linter
